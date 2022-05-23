@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Verify",
+            "type": "shell",
+            "group": "test",
+            "command": "make verify"
+        },
+        {
+            "label": "Upload",
+            "type": "shell",
+            "group": "build",
+            "command": "make upload"
+        },
+        {
+            "label": "Compile (CLI)",
+            "type": "shell",
+            "group": "build",
+            "command": "make compile"
+        },
+        {
+            "label": "Upload (CLI)",
+            "type": "shell",
+            "group": "build",
+            "command": "make upload-cli"
+        }
+    ]
+}

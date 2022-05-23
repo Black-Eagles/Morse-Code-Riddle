@@ -1,2 +1,2 @@
-# Morse-Code-Riddle
+# Riddle
 Arduino Morse Code Riddle

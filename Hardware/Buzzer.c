@@ -1,15 +1,15 @@
 #include "Buzzer.h"
 
-void on() {
+void beepOn(void) {
     digitalWrite(BUZZER_LED_PIN, HIGH);
 }
 
-void off() {
+void beepOff(void) {
     digitalWrite(BUZZER_LED_PIN, LOW);
 }
 
-void peep(int wait) {
-    on();
+void beep(int wait) {
+    beepOn();
     delay(wait);
-    off();
+    beepOff();
 }

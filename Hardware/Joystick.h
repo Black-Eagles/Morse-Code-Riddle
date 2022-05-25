@@ -10,6 +10,6 @@ bool isLeft(void);
 bool isRight(void);
 bool isTop(void);
 bool isButtom(void);
-bool isPressed(void):
+bool isPressed(void);
 
 #endif

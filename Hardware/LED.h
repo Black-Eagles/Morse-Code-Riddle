@@ -3,6 +3,7 @@
 
 #include "Pins.h"
 
-// WIP
+void ledOn(void);
+void ledOff(void);
 
 #endif

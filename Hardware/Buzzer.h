@@ -4,9 +4,8 @@
 #include <Arduino.h>
 #include "Pins.h"
 
-bool isRunning();
-void on();
-void off();
-void peep(int delay);
+void beepOn(void);
+void beepOff(void);
+void beep(int delay);
 
 #endif

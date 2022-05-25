@@ -26,6 +26,33 @@
             "defines": [
                 "USBCON"
             ]
+        },
+        {
+            "name": "MNS",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "C:/Program Files/iotw/arduino-1.8.17/hardware/tools/avr/bin/avr-gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "includePath": [
+                "${workspaceRoot}/**",
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/arduino/avr/cores/arduino/**",
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/arduino/avr/libraries/EEPROM/**",
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/arduino/avr/variants/**",
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/arduino/avr/libraries/SPI/**",
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/arduino/avr/libraries/SoftwareSerial/**",
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/arduino/avr/libraries/Wire/**",
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/tools/avr/avr/include/**",
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/tools/avr/avr/include/avr/**",
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/tools/avr/avr/include/compat/**",
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/tools/avr/avr/include/util/**"
+            ],
+            "defines": [
+                "USBCON"
+            ]
         }
     ],
     "version": 4

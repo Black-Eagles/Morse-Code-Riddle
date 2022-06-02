@@ -2,7 +2,6 @@
     "arduino.path": "C:/Program Files/iotw/arduino-1.8.17",
     "arduino.commandPath": "arduino.exe",
     "files.associations": {
-        "*.ino": "cpp",
-        "rgb-led.h": "c"
+        "*.ino": "cpp"
     }
 }

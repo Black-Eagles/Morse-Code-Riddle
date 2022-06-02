@@ -1,7 +1,8 @@
-#ifndef PINS_H
-#define PINS_H
+#ifndef HEADER_H
+#define HEADER_H
 
 #include <Arduino.h>
+#include "Lib/Joystick-1.0.0/src/Joystick.h"
 
 // RFID
 #define RFID_SDA_PIN 10
@@ -13,6 +14,7 @@
 // Joystick
 #define JOYSTICK_X_AXIS_PIN 1
 #define JOYSTICK_Y_AXIS_PIN 0
+#define JOYSTICK_BUTTON_PIN 5
 
 // RGB-LED
 #define RGB_GREEN_LED_PIN 2

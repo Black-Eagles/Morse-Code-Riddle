@@ -2,7 +2,6 @@
 #define HEADER_H
 
 #include <Arduino.h>
-#include "Lib/Joystick-1.0.0/src/Joystick.h"
 
 // RFID
 #define RFID_SDA_PIN 10

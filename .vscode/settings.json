@@ -1,6 +1,6 @@
 {
-    "arduino.path": "C:/Program Files/iotw/arduino-1.8.17",
-    "arduino.commandPath": "arduino.exe",
+    "arduino.path": "/usr/share/arduino",
+    "arduino.commandPath": "arduino",
     "files.associations": {
         "*.ino": "cpp"
     }

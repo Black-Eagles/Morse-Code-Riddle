@@ -53,6 +53,33 @@
             "defines": [
                 "USBCON"
             ]
+        },
+        {
+            "name": "Arch Linux",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/avr-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "includePath": [
+                "${workspaceRoot}/**",
+                "/usr/share/arduino/hardware/archlinux-arduino/avr/cores/arduino/**",
+                "/usr/share/arduino/hardware/archlinux-arduino/avr/libraries/EEPROM/**",
+                "/usr/share/arduino/hardware/archlinux-arduino/avr/variants/**",
+                "/usr/share/arduino/hardware/archlinux-arduino/avr/libraries/SPI/**",
+                "/usr/share/arduino/hardware/archlinux-arduino/avr/libraries/SoftwareSerial/**",
+                "/usr/share/arduino/hardware/archlinux-arduino/avr/libraries/Wire/**",
+                "/usr/avr/include/**",
+                "/usr/avr/include/avr/**",
+                "/usr/avr/include/compat/**",
+                "/usr/avr/include/util/**"
+            ],
+            "defines": [
+                "USBCON"
+            ]
         }
     ],
     "version": 4

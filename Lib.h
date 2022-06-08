@@ -19,11 +19,13 @@ void greenOn(void);
 void greenOff(void);
 
 // Joystick
-Joystick joystick;
 bool isLeft(void);
 bool isRight(void);
 bool isUp(void);
 bool isDown(void);
+
+// LCD
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 /* ----- END HARDWARE ----- */
 
 #endif

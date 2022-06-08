@@ -3,6 +3,8 @@
 
 /* ----- BEGIN MAIN ----- */
 void setup() {
+    lcd.init();
+    lcd.backlight();
     pinMode(BUZZER_LED_PIN, OUTPUT);
     pinMode(GREEN_LED_PIN, OUTPUT);
     pinMode(RGB_RED_LED_PIN, OUTPUT);
@@ -12,12 +14,10 @@ void setup() {
 }
 
 void loop() {
-    
-    Serial.print("X: ");
-    Serial.print(analogRead(JOYSTICK_X_AXIS_PIN));
-    Serial.print(" Y: ");
-    Serial.println(analogRead(JOYSTICK_Y_AXIS_PIN));
     // beaconSignal();
+    if (isDown()) {
+        beaconSignal();
+    }
 }
 /* ----- END MAIN ----- */
 
@@ -38,5 +38,25 @@ void beaconSignal(void) {
     delay(10);
     buzzerOff();
     delay(750);
+}
+
+uint8_t lcdcursor = 0;
+void moveLeft() {
+    if (lcdcursor > 0) {
+        lcdcursor--;
+        return;
+    }
+    if (lcdcursor == 0) {
+        return;
+    }
+}
+void moveRight() {
+    if (lcdcursor < 15) {
+        lcdcursor++;
+        return;
+    }
+    if (lcdcursor == 15) {
+        return;
+    }
 }
 /* ----- END UTILS ----- */

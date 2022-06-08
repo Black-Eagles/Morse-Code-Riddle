@@ -11,6 +11,7 @@
                 "databaseFilename": ""
             },
             "includePath": [
+                "~/Documents/Arduino/libraries/*/**",
                 "${workspaceRoot}/**",
                 "C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/**",
                 "C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/EEPROM/**",
@@ -48,7 +49,8 @@
                 "C:/Program Files/iotw/arduino-1.8.17/hardware/tools/avr/avr/include/**",
                 "C:/Program Files/iotw/arduino-1.8.17/hardware/tools/avr/avr/include/avr/**",
                 "C:/Program Files/iotw/arduino-1.8.17/hardware/tools/avr/avr/include/compat/**",
-                "C:/Program Files/iotw/arduino-1.8.17/hardware/tools/avr/avr/include/util/**"
+                "C:/Program Files/iotw/arduino-1.8.17/hardware/tools/avr/avr/include/util/**",
+                "${workspaceRoot}/../../Lib/CXX/**"
             ],
             "defines": [
                 "USBCON"
@@ -65,6 +67,7 @@
                 "databaseFilename": ""
             },
             "includePath": [
+                "~/Arduino/libraries/*/**",
                 "${workspaceRoot}/**",
                 "/usr/share/arduino/hardware/archlinux-arduino/avr/cores/arduino/**",
                 "/usr/share/arduino/hardware/archlinux-arduino/avr/libraries/EEPROM/**",

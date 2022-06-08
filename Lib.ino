@@ -33,18 +33,45 @@ void greenOff(void) {
 
 // Joystick
 bool isLeft(void) {
-    return false;
+    int data = analogRead(JOYSTICK_Y_AXIS_PIN);
+    if (data <= 15) {
+        return true;
+    } else {
+        return false;
+    }
 }
 bool isRight(void) {
-    return false;
+    int data = analogRead(JOYSTICK_Y_AXIS_PIN);
+    if (data >= 900) {
+        return true;
+    } else {
+        return false;
+    }
 }
 bool isUp(void) {
-    return false;
+        int data = analogRead(JOYSTICK_X_AXIS_PIN);
+    if (data >= 900) {
+        return true;
+    } else {
+        return false;
+    }
 }
 bool isDown(void) {
-    return false;
+    int data = analogRead(JOYSTICK_X_AXIS_PIN);
+    if (data <= 15) {
+        return true;
+    } else {
+        return false;
+    }
 }
 bool isPressed(void) {
     return digitalRead(JOYSTICK_BUTTON_PIN);
 }
+
+// LCD
+void lcdWrite(uint8_t location, char text) {
+    lcd.setCursor(location, 0);
+    lcd.write(text);
+}
+
 /* ----- END HARDWARE ----- */

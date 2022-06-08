@@ -1,7 +1,10 @@
 #ifndef HEADER_H
 #define HEADER_H
 
+// Libs
 #include <Arduino.h>
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
 
 // RFID
 #define RFID_SDA_PIN 10

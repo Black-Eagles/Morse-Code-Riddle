@@ -1,7 +1,0 @@
-{
-    "arduino.path": "/usr/share/arduino",
-    "arduino.commandPath": "arduino",
-    "files.associations": {
-        "*.ino": "cpp"
-    }
-}

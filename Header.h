@@ -3,8 +3,12 @@
 
 // Libs
 #include <Arduino.h>
+// Display
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+// Card Reader
+#include <SPI.h>
+#include <MFRC522.h>
 
 // RFID
 #define RFID_SDA_PIN 10

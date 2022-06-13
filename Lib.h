@@ -26,6 +26,11 @@ bool isDown(void);
 
 // LCD
 LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+// RFID
+MFRC522 nfcReader(RFID_SDA_PIN, RFID_RST_PIN);
+bool cardPresent(void);
+
 /* ----- END HARDWARE ----- */
 
 #endif

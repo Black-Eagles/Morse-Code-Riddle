@@ -34,7 +34,7 @@ void greenOff(void) {
 // Joystick
 bool isLeft(void) {
     int data = analogRead(JOYSTICK_Y_AXIS_PIN);
-    if (data <= 15) {
+    if (data <= 120) {
         return true;
     } else {
         return false;
@@ -58,7 +58,7 @@ bool isUp(void) {
 }
 bool isDown(void) {
     int data = analogRead(JOYSTICK_X_AXIS_PIN);
-    if (data <= 15) {
+    if (data <= 100) {
         return true;
     } else {
         return false;
@@ -72,6 +72,17 @@ bool isPressed(void) {
 void lcdWrite(uint8_t location, char text) {
     lcd.setCursor(location, 0);
     lcd.write(text);
+}
+
+// RFID
+bool cardPresent(void) {
+    if (!nfcReader.PICC_IsNewCardPresent()) {
+        return false;
+    }
+    if (!nfcReader.PICC_ReadCardSerial()) {
+        return false;
+    }
+    return true;
 }
 
 /* ----- END HARDWARE ----- */

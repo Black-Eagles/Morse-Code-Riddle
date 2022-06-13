@@ -67,7 +67,7 @@
                 "databaseFilename": ""
             },
             "includePath": [
-                "~/Arduino/libraries/*/**",
+                "${env:HOME}/Arduino/libraries/**",
                 "${workspaceRoot}/**",
                 "/usr/share/arduino/hardware/archlinux-arduino/avr/cores/arduino/**",
                 "/usr/share/arduino/hardware/archlinux-arduino/avr/libraries/EEPROM/**",
